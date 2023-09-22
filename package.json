@@ -1,0 +1,27 @@
+{
+  "name": "electron-custom-titlebar",
+  "version": "1.0.0",
+  "description": "An example of custom window titlebar in electronjs",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poralcode/electron-custom-titlebar.git"
+  },
+  "keywords": [
+    "electronjs",
+    "custom-titlebar",
+    "nodejs"
+  ],
+  "author": "Poralcode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poralcode/electron-custom-titlebar/issues"
+  },
+  "homepage": "https://github.com/poralcode/electron-custom-titlebar#readme",
+  "dependencies": {
+    "electron": "^26.2.2"
+  }
+}

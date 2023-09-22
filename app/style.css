@@ -1,0 +1,64 @@
+/* Global CSS styles */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Title bar styles */
+.titlebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444654;
+  color: white;
+  border: solid 1px;
+}
+
+/* Title styles */
+#title {
+  flex-grow: 1; /* Allow title to grow and take up remaining width */
+  font-weight: bold;
+  -webkit-app-region: drag;
+  overflow: hidden; /* Add this line to handle long titles gracefully */
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-overflow: ellipsis; /* Add ellipsis for long titles */
+  padding: 8px 16px;
+}
+
+/* Controls container styles */
+#controls {
+  flex-shrink: 0;
+  display: flex;
+}
+
+/* Control button styles */
+.controls button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #FFFFFF;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Minimize Icon */
+#minimize::before {
+  content: "\2013"; /* Unicode for the horizontal line */
+}
+
+/* Unmaximize Icon (initial state) */
+.unmaximized::before {
+  content: "\25A2"; /* Unicode for a solid square */
+}
+
+/* Maximize Icon (when window is maximized) */
+.maximized::before {
+  content: "\25A3"; /* Unicode for a solid square */
+}
+
+/* Close Icon */
+#close::before {
+  content: "\2715"; /* Unicode for the multiplication sign (X) */
+}
